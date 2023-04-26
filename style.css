@@ -1,0 +1,295 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS variable */
+:root {
+  --navw: 25px;
+}
+
+/* Utility Classes */
+.h-primary {
+  font-size: 2.83rem;
+  padding: 2px 20px;
+  font-family: "Alkalami";
+}
+
+.h-secondary {
+  font-size: 2.13rem;
+  padding: 2px 20px;
+  font-family: "Libre Bodoni";
+}
+
+.center {
+  text-align: center;
+}
+
+.btn {
+  padding: 4px 10px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  margin: 12px 51px;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Libre Bodoni";
+  text-shadow: 1px 1px 20px black;
+  transition: all 0.2s ease-out 0s;
+}
+
+.btn:hover {
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+  text-shadow: 2px 2px 15px white;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  /* overflow:hidden; */
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+#navbar::before {
+  content: "";
+  background-color: burlywood;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* width: 105%; */
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 1;
+  /* border-radius: 30px 30px 0px 0px; */
+}
+
+/* Navigation Bar:Logo and Image */
+#logo {
+  margin: 5px 11px;
+}
+
+#logo img {
+  margin: -1px 27px;
+}
+
+/* Navigation Bar:list-styling */
+#navbar ul {
+  display: flex;
+  font-family: "Andika";
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 1px 12px;
+  margin: 15px 7px;
+  color: black;
+  border-radius: 70px;
+  transition: all 0.1s ease-out 0s;
+}
+
+#navbar ul li a:hover {
+  color: white;
+  background-color: black;
+}
+
+/* Home section  */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 281px;
+  height: 800px;
+  position: relative;
+  top: 0px;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url("img/bg1.jpg") no-repeat center center/cover;
+  height: 105%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.74;
+}
+
+#home h1 {
+  text-align: center;
+  text-shadow: 2px 2px 15px white;
+  font-family: "Alkalami";
+}
+
+#home p {
+  font-size: 1.1rem;
+  text-align: center;
+  text-shadow: 3px 4px 15px white;
+  font-family: "Andika";
+}
+
+#home h1,
+p,
+button {
+  position: relative;
+}
+
+#home a {
+  display: block;
+  text-decoration: none;
+}
+
+/* Service Section */
+#services-container {
+  margin: 70px 0px;
+}
+
+#services {
+  display: flex;
+  margin: 45px;
+}
+
+#services .box {
+  border: 2px solid rgb(85, 27, 17);
+  padding: 10px;
+  margin: 05px 10px;
+  border-radius: 25px;
+  background-color: #ca9bca87;
+}
+
+#services .box img {
+  height: 150px;
+  display: block;
+  margin: auto;
+}
+
+#services .box p {
+  padding: 20px;
+  text-align: justify;
+  font-family: "Andika";
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+/* Clients Section  */
+#client-section {
+  height: 300px;
+  position: relative;
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clients img {
+  height: 120px;
+  width: 150px;
+  transition: all 0.1s ease-out 0s;
+}
+
+.client-item img:hover {
+  box-shadow: 3px 3px 20px black;
+  border-radius: 20px;
+}
+
+.client-item {
+  padding: 10px;
+  z-index: 1;
+}
+
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url("img/bg3.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+/* Contact Section */
+#contact {
+  position: relative;
+  margin: 70px 0px 0px 0px;
+  height: 400px;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  z-index: -1;
+  background: url("img/contact1.jpg") no-repeat center center/cover;
+  opacity: 0.55;
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  margin: 20px;
+}
+
+#contact-box input {
+  width: 400px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  margin: 5px;
+  font-size: 18px;
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+}
+
+#contact-box input:hover {
+  border: 2px solid burlywood;
+}
+
+#contact h1 {
+  text-shadow: 2px 2px 25px #ff8b8b, 1px 1px white;
+}
+
+#contact-box label {
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-shadow: 2px 2px 25px #ff8b8b, 1px 1px white;
+}
+
+#contact-box button {
+  padding: 2px 10px;
+  margin: 10px;
+  font-family: "Libre Bodoni";
+  font-size: 20px;
+}
+
+footer {
+  position: relative;
+  background-color: grey;
+  padding: 5px;
+  margin: 94px 0px 10px 0px;
+}

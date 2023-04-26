@@ -1,0 +1,111 @@
+/* Utility Classes */
+.h-primary {
+    font-size: 1.7rem;
+}
+
+.h-secondary {
+    font-size: 1.13rem;
+    padding: 2px 0px;
+}
+
+.btn {
+    font-size: 0.8rem;
+    padding: 3px 6px;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* Navigation */
+#navbar {
+   flex-direction: column;
+   
+}
+
+#navbar ul li a {
+    font-size: 1rem;
+    padding: 4px 6px;
+    position: relative;
+    top: 0px;
+}
+
+#logo img {
+    width: 40px;
+    height: 40px;
+    margin: -4px 0px;
+}
+
+#logo{
+    width: 40px;
+    height: 40px;
+    margin: 10px 0px;
+}
+
+
+
+/* Home section */
+#home {
+    height: 450px;
+    padding: 20px 20px;
+}
+
+#home:before {
+    height: 500px;
+}
+
+#home p {
+    font-size: 0.89rem;
+}
+
+#home h1,
+p,
+a {
+    position: relative;
+    top: 100px;
+}
+
+
+
+/* Services Section */
+#services {
+    flex-direction: column;
+}
+
+#services .box {
+    padding: 10px;
+    margin: 05px 0px;
+}
+
+#services .box img{
+    height: 100px;
+}
+
+#services-container p{
+    position: relative;
+    top: 0px;
+}
+
+/* Clients Section */
+#clients {
+    flex-wrap: wrap;
+
+}
+
+#clients img{
+    width: 80px;
+    padding: 5px 0px;
+    height: auto;
+}
+
+#client-section a{
+    position: relative;
+    top: 0px;
+}
+
+
+/* Contact Section */
+#contact-box input{
+    width: 95%;
+}
